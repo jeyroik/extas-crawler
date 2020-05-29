@@ -1,0 +1,24 @@
+{
+  "name": "extas/crawlers",
+  "package_classes": [
+    {
+      "class": "extas\\components\\crawlers\\CrawlerRepository",
+      "interface": "crawlerRepository"
+    }
+  ],
+  "plugins": [
+    {
+      "class": "extas\\components\\plugins\\PluginInstallCrawlers",
+      "stage": "extas.install.section",
+      "install_on": "initialization"
+    }
+  ],
+  "extensions": [
+    {
+      "class": "extas\\components\\extensions\\ExtensionRepositoryGet",
+      "interface": "extas\\interfaces\\extensions\\IExtensionRepositoryGet",
+      "subject": "*",
+      "methods": ["crawlerRepository"]
+    }
+  ]
+}

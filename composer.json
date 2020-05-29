@@ -2,7 +2,7 @@
   "name": "jeyroik/extas-crawlers",
   "description": "Crawlers package for extas",
   "require": {
-    "jeyroik/extas-installer": "2.*"
+
   },
   "require-dev": {
     "phpunit/phpunit": "^9",
