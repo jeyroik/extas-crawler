@@ -17,5 +17,5 @@ class PluginInstallCrawlers extends PluginInitSection
     protected string $selfName = 'crawler';
     protected string $selfRepositoryClass = 'crawlerRepository';
     protected string $selfUID = Crawler::FIELD__NAME;
-    protected string $selfItemClass = Crawler::FIELD__CLASS;
+    protected string $selfItemClass = Crawler::class;
 }
