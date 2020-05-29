@@ -9,7 +9,7 @@
   "plugins": [
     {
       "class": "extas\\components\\plugins\\PluginInstallCrawlers",
-      "stage": "extas.install.section",
+      "stage": "extas.init.section.crawlers",
       "install_on": "initialization"
     }
   ],
@@ -18,7 +18,8 @@
       "class": "extas\\components\\extensions\\ExtensionRepositoryGet",
       "interface": "extas\\interfaces\\extensions\\IExtensionRepositoryGet",
       "subject": "*",
-      "methods": ["crawlerRepository"]
+      "methods": ["crawlerRepository"],
+      "install_on": "initialization"
     }
   ]
 }
