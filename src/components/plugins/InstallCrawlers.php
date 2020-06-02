@@ -2,7 +2,7 @@
 namespace extas\components\plugins;
 
 use extas\components\crawlers\Crawler;
-use extas\components\plugins\init\PluginInitSection;
+use extas\components\plugins\init\InitSection;
 
 /**
  * Class PluginInstallCrawlers
@@ -11,7 +11,7 @@ use extas\components\plugins\init\PluginInitSection;
  * @package extas\components\plugins
  * @author jeyroik <jeyroik@gmail.com>
  */
-class PluginInstallCrawlers extends PluginInitSection
+class InstallCrawlers extends InitSection
 {
     protected string $selfSection = 'crawlers';
     protected string $selfName = 'crawler';
