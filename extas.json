@@ -8,7 +8,7 @@
   ],
   "plugins": [
     {
-      "class": "extas\\components\\plugins\\PluginInstallCrawlers",
+      "class": "extas\\components\\plugins\\InstallCrawlers",
       "stage": "extas.init.section.crawlers",
       "install_on": "initialization"
     }
