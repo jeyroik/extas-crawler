@@ -4,6 +4,7 @@ namespace extas\components\crawlers;
 use extas\components\Item;
 use extas\components\samples\parameters\THasSampleParameters;
 use extas\components\TDispatcherWrapper;
+use extas\components\THasTags;
 use extas\interfaces\crawlers\ICrawler;
 use extas\interfaces\crawlers\ICrawlerDispatcher;
 use Symfony\Component\Console\Input\InputInterface;
@@ -19,6 +20,7 @@ class Crawler extends Item implements ICrawler
 {
     use TDispatcherWrapper;
     use THasSampleParameters;
+    use THasTags;
 
     /**
      * @param string $path
